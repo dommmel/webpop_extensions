@@ -30,32 +30,32 @@ Use something like the following as the template of the webpop page (the one tha
 
     <pop:content>
 
-      <pop:utils:is_not_mobile_nor_pagetab>
-        <pop:redirect to="<pop:utils:facebook_path/>"/>
-      </pop:utils:is_not_mobile_nor_pagetab>
+      <pop:fbutils:is_not_mobile_nor_pagetab>
+        <pop:redirect to="<pop:fbutils:facebook_path/>"/>
+      </pop:fbutils:is_not_mobile_nor_pagetab>
 
       <!-- User visits the page tab -->
-      <pop:utils:on_page_tab>
+      <pop:fbutils:on_page_tab>
           
-        <pop:utils:is_fan>
+        <pop:fbutils:is_fan>
           <!-- user likes the page -->
           Thanks for liking us!
-        </pop:utils:is_fan>
+        </pop:fbutils:is_fan>
 
-        <pop:utils:not_is_fan>
+        <pop:fbutils:not_is_fan>
           <!-- user doen not like the page -->
           You better like us!
-        </pop:utils:not_is_fan>
+        </pop:fbutils:not_is_fan>
       
-      </pop:utils:on_page_tab>
+      </pop:fbutils:on_page_tab>
 
       <!-- User visits the mobile page -->
-      <pop:utils:not_on_page_tab>
+      <pop:fbutils:not_on_page_tab>
 
         <!-- user is not on the page tab but on the mobile page -->
         We don't care if you like us
 
-      </pop:utils:not_on_page_tab>
+      </pop:fbutils:not_on_page_tab>
 
     </pop:content>
     
